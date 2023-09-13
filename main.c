@@ -2153,7 +2153,7 @@ void MmwDemo_dataPathTask(UArg arg0, UArg arg1)
             MmwDemo_transferLVDSUserData(dataPathObj);
         }    
         
-        MmwDemo_transmitProcesseDoutput(gMmwMCB.loggingUartHandle,
+        MmwDemo_transmitProcessedOutput(gMmwMCB.loggingUartHandle,
                                         dataPathObj);
 
         dataPathObj->timingInfo.transmitOutputCycles = Pmu_getCount(0) - transmitOutStartTime;
